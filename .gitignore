@@ -1,0 +1,12 @@
+# Python / Django
+virtual/
+*.pyc
+__pycache__/
+.env
+db.sqlite3   # if using SQLite
+*.log
+
+# Angular
+flight_reservation_angular_app/src/environments/environment.ts
+node_modules/
+dist/
