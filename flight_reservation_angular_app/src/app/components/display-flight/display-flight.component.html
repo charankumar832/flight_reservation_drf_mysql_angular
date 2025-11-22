@@ -1,0 +1,18 @@
+
+    <h2>Flights:</h2>
+   <table>
+     <tr>
+       <th>Airlines</th>
+       <th>Departure City</th>
+       <th>Arrival City</th>
+       <th>Departure Date Time</th>
+     </tr>
+     <tr *ngFor="let flight of data">
+       <td>{{flight.airlines}}</td>
+       <td>{{flight.departureCity}}</td>
+       <td>{{flight.arrivalCity}}</td>
+       <td>{{flight.estimatedTimeOfDeparture}}</td>
+       <td><a (click)='onSelect(flight.id)'>Select</a></td>
+     </tr>
+   </table>
+
